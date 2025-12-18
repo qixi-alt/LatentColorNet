@@ -9,6 +9,7 @@ conda activate BBDM
 ### Paired Data Organization
 To train the model on your custom dataset, please organize your images into a directory structure as shown below. Ensure that images in folder `A` (Source) and folder `B` (Target) share the same filenames.
 
+```text
 /path/to/your_dataset/
 ├── train
 │   ├── A       # Input images 
@@ -19,6 +20,7 @@ To train the model on your custom dataset, please organize your images into a di
 └── test
     ├── A
     └── B
+```
 
 [//]: # (Configuration)
 Update the dataset configuration in your config.yaml file to point to your data root:
