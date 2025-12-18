@@ -1,3 +1,10 @@
+## 💾 Dataset Download
+
+We provide the **OIVD** (Outdoor Infrared-Visible Dataset) used in our experiments. You can download the full dataset from the link below:
+
+- **OIVD Dataset:** [Google Drive](https://drive.google.com/drive/folders/1yIhL3JF_3wPfoXE7t4-ybDvKMgKoV6tO?usp=sharing)
+
+
 ## 📂 Data Preparation
 
 ### Paired Data Organization
@@ -74,6 +81,6 @@ Please download the corresponding VQGAN checkpoint for your desired latent depth
 
 > **Note:** After downloading, remember to update the `vqgan_ckpt_path` in your configuration file to point to these files.
 
-
+https://drive.google.com/drive/folders/1yIhL3JF_3wPfoXE7t4-ybDvKMgKoV6tO?usp=sharing
 
 
