@@ -26,6 +26,7 @@ dataset_config:
   dataset_path: '/path/to/your_dataset'  # Absolute or relative path
 ```
 
+
 ## 🚀 Training and Testing
 
 ### 1. Configuration
@@ -35,9 +36,12 @@ First, choose and modify the configuration file based on the templates provided 
 - **Latent Space:** Use `configs/Template-LBBDM-f4.yaml` (or f8/f16) depending on your desired latent depth.
 
 > **⚠️ Important:** Open your chosen config file and ensure you have updated the **`dataset_path`** and **`VQGAN checkpoint path`** to match your local setup.
+>
+> Additionally, pay special attention to **`n_embed`** (e.g., 8192) and **`n_codebooks`** (e.g., 5). These are crucial parameters that should be determined and adjusted according to your specific task requirements.
 
 ### 2. Training
 To start training from scratch, run the following command. The `--save_top` flag ensures the best performing models are saved.
+
 ```text
 python3 main.py --config configs/Template_LBBDM_f4.yaml \
                 --train \
@@ -48,6 +52,7 @@ python3 main.py --config configs/Template_LBBDM_f4.yaml \
 
 ### 3. Testing/Evaluation
 To sample from the whole test dataset and evaluate metrics, use the --sample_to_eval flag and specify the model checkpoint:   
+
 ```text
 python3 main.py --config configs/Template_LBBDM_f4.yaml \
                 --sample_to_eval \
@@ -68,3 +73,7 @@ Please download the corresponding VQGAN checkpoint for your desired latent depth
 | **VQ-f16** | $f=16$ | [Download vq-f16.zip](https://heibox.uni-heidelberg.de/f/0e42b04e2e904890a9b6/?dl=1) |
 
 > **Note:** After downloading, remember to update the `vqgan_ckpt_path` in your configuration file to point to these files.
+
+
+
+
