@@ -1,9 +1,3 @@
-## Requirements
-```commandline
-cond env create -f environment.yml
-conda activate BBDM
-```
-
 ## 📂 Data Preparation
 
 ### Paired Data Organization
