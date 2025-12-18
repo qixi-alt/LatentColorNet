@@ -30,8 +30,6 @@ dataset_type: 'custom_aligned'   # Keep this as 'custom_aligned'
 dataset_config:
   dataset_path: '/path/to/your_dataset'  # Absolute or relative path
 
-
-
 ## 🚀 Training and Testing
 
 ### 1. Configuration
@@ -44,21 +42,22 @@ First, choose and modify the configuration file based on the templates provided 
 
 ### 2. Training
 To start training from scratch, run the following command. The `--save_top` flag ensures the best performing models are saved.
-
+```text
 python3 main.py --config configs/Template_LBBDM_f4.yaml \
                 --train \
                 --sample_at_start \
                 --save_top \
                 --gpu_ids 0
+```
 
 ### 3. Testing/Evaluation
 To sample from the whole test dataset and evaluate metrics, use the --sample_to_eval flag and specify the model checkpoint:   
-
+```text
 python3 main.py --config configs/Template_LBBDM_f4.yaml \
                 --sample_to_eval \
                 --gpu_ids 0 \
                 --resume_model path/to/your/model_ckpt.pth       
-
+```
 
 ## 📥 Pre-trained Models
 This project utilizes pre-trained VQGAN models from [Latent Diffusion Models (LDM)](https://github.com/CompVis/latent-diffusion) as the first-stage autoencoder. All our models are trained based on these consistent VQGAN backbones.
