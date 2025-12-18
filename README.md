@@ -78,5 +78,3 @@ Please download the corresponding VQGAN checkpoint for your desired latent depth
 
 Our code is developed based on the excellent open-source work of **BBDM**. We deeply appreciate the authors for providing their implementation.
 
-* **BBDM:** [Brownian Bridge Diffusion Model](https://github.com/xuekt98/BBDM)
-
