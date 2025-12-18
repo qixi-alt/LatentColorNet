@@ -25,10 +25,12 @@ To train the model on your custom dataset, please organize your images into a di
 [//]: # (Configuration)
 Update the dataset configuration in your config.yaml file to point to your data root:
 
+```text
 dataset_name: 'custom_dataset'   # Give your dataset a name
 dataset_type: 'custom_aligned'   # Keep this as 'custom_aligned'
 dataset_config:
   dataset_path: '/path/to/your_dataset'  # Absolute or relative path
+```
 
 ## 🚀 Training and Testing
 
