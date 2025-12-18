@@ -68,9 +68,3 @@ Please download the corresponding VQGAN checkpoint for your desired latent depth
 | **VQ-f16** | $f=16$ | [Download vq-f16.zip](https://heibox.uni-heidelberg.de/f/0e42b04e2e904890a9b6/?dl=1) |
 
 > **Note:** After downloading, remember to update the `vqgan_ckpt_path` in your configuration file to point to these files.
-
-
-## 🙏 Acknowledgments
-
-Our code is developed based on the excellent open-source work of **BBDM**. We deeply appreciate the authors for providing their implementation.
-
